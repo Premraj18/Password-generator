@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgb(238, 165, 77), rgb(63, 140, 145));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 1px solid wheat;
+    border-radius: 12px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 40px;
+    gap: 12px;
+    color: white;
+    box-shadow: 8px 8px 4px #909090, 8px 8px 0px #575757;
+}
+.container h1{
+    font-size: 1.4rem;
+    margin-block: 8px;
+}
+.inputBox{
+    position: relative;
+}
+
+.inputBox span{
+    position: absolute;
+    top: 16px;
+    right: 6px;
+    color: #000;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2;
+}
+#passbox{
+    width: 260px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 2px;
+    cursor: text;
+    font-size: 18px;
+}
+.row{
+    display: flex;
+}
+.row p {
+    flex-basis: 100%;
+}
+.btn{
+    height: 40px;
+    background: transparent;
+    border: none;
+    background-color: rgb(87, 64, 33);
+    box-shadow: 0 0 2px wheat;
+    color: aliceblue;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: aliceblue;
+    color: rgb(87, 64, 33);
+}
